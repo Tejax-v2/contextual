@@ -3,9 +3,12 @@ import streamlit as st
 
 from llm import define
 
+favicon_path='favicon.png'
+
 page_title = 'Contextual Dictionary'
 st.set_page_config(
         page_title=page_title,
+        page_icon=favicon_path,
 )
 st.title(page_title)
 st.text('Type in a word and the sentence where it\'s used and get the definition.\nPowered by Claude API.')
